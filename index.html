@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Playfair+Display:wght@500;600;700;800;900&family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet"> 
+        <title>Yoga Flow Survey Form</title>
+    </head>
+    <body>
+        <div class="container">
+        <h1 id="title">Yoga Flow Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve your Zen.</p>
+        
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name:</label><br>
+                    <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                    class="form-control" 
+                    placeholder="Enter your Name" 
+                    required>
+                </div>
+
+                <div class="form-group">               
+                    <label for="email" id="email-label">Email:</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    class="form-control"
+                    placeholder="Enter your Email Address" 
+                    required>
+                </div>
+
+                <div class="form-group"> 
+                    <label for="age" id="number-label">Age:</label><br>
+                    <input 
+                    type="number" 
+                    id="number" 
+                    class="form-control"
+                    placeholder="Enter your Age (Optional)" 
+                    min="1" 
+                    max="200">
+                </div>
+
+                <div class="form-group">
+                    <label for="dropdown">Which option would best describe your Yoga experience level?</label><br>
+                    <select name="dropdown" id="dropdown" class="form-control">
+                    <option disabled selected hidden>Choose Experience Level</option>
+                    <option value="none">No Prior Yoga Experience</option>
+                    <option value="beginner">Less than a year</option>
+                    <option value="intermediate">1-3 years</option>
+                    <option value="experienced">4-6 years</option>
+                    <option value="master">7+ years</option><br>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                <label for="recent-visit">Date of Recent Visit</label><br>
+                <input type="date" id="recent-visit" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label for="recommendation">Would you Recommend us to a friend?</label><br>
+                
+                <label for="yes"><input type="radio" name="recommendation" id="yes" class="input-radio" value="yes">Definitely!</label><br>
+               
+                <label for="maybe"> <input type="radio" name="recommendation" id="maybe" class="input-radio" value="maybe">Maybe.</label><br>
+                
+                <label for="no"><input type="radio" name="recommendation" id="no" class="input-radio" value="no">Not sure.</label>
+                </div>
+
+                <div class="form-group">
+                <label for="favExperience">What was your favorite experience?</label><br>
+                <input type="text" id="favExperience" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <p>What your like to see improved?
+                <span class="clue">(Check all that apply)</span></p>
+                <label for="music">
+                    <input 
+                    type="checkbox" 
+                    name="improvement" 
+                    class="input-checkbox" 
+                    value="music">Music Choice</label><br>
+               
+                <label for="intensity">
+                    <input 
+                    type="checkbox" 
+                    name="improvement" 
+                    class="input-checkbox" 
+                    value="intensity">Level of Intensity</label><br>
+                
+                <label for="variety">
+                    <input 
+                    type="checkbox" 
+                    name="improvement"  
+                    class="input-checkbox" 
+                    value="variety">Variety of Class Offers</label><br>
+                
+                <label for="online-option">
+                    <input type="checkbox" 
+                    name="improvement" 
+                    id="online-option" 
+                    class="input-checkbox" 
+                    value="online-option">Online Option Offers</label><br>
+                
+                <label for="public">
+                    <input 
+                    type="checkbox" 
+                    name="improvement" 
+                    class="input-checkbox" 
+                    value="public">Public Meet-ups</label><br>
+                
+                <label for="tech-mod">
+                    <input 
+                    type="checkbox" 
+                    name="improvement" 
+                    class="input-checkbox" 
+                    value="tech-mod">Moderations to Yoga Techniques</label><br>
+
+                <label for="nothing">
+                    <input 
+                    type="checkbox" 
+                    name="improvement" 
+                    class="input-checkbox" 
+                    value="nothing">No suggestions, I enjoyed it!</label>
+                <br><br>
+
+                <label for="comments">Any additional comments or questions?</label><br>
+                <textarea name="comments" id="comments" class="input-textarea"></textarea>
+                </div>
+
+                <input type="submit" id="submit" class="submit-button">
+            </form>
+        
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>
